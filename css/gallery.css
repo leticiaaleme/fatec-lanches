@@ -1,0 +1,30 @@
+/* GALERIA */
+.galeria {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex; 
+  gap: 12px; 
+  padding: 20px; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.galeria::-webkit-scrollbar {
+  display: none;
+}
+
+.galeria img { 
+  scroll-snap-align: center;
+  border-radius: 24px; 
+  width: 500px; 
+  height: 200px; 
+  object-fit: cover; 
+  border: 6px solid #b2ebf2; 
+  box-sizing: border-box; 
+  background: #fff;
+  -webkit-user-drag: none;
+  pointer-events: auto;
+}

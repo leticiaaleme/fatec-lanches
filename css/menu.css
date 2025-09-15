@@ -1,0 +1,109 @@
+/* CARDÁPIO */
+.cardapio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  padding: 40px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 32px;
+  margin: 60px 20px 40px 20px;
+}
+
+@media (max-width: 1200px) {
+  .cardapio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .cardapio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .cardapio {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD */
+.card {
+  position: relative;
+  background: #b2ebf2;
+  border-radius: 24px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border: 5px solid #b2ebf2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 18px 18px 0 0;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.preco {
+  background: #26c6da;
+  color: white;
+  font-weight: bold;
+  padding: 16px 0;
+  font-size: 1.6rem;
+}
+
+.card h3 {
+  margin: 18px 0 8px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0 16px 18px 16px;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* OVERLAY */
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* COMPRAR */
+.card .overlay button {
+  background: #2ecc71;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card .overlay button:hover {
+  background: #27ae60;
+}

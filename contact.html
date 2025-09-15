@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatec Lanches</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epunda+Sans:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/img/logo.png" alt="Logo Fatec Lanches">
+        <span>Fatec Lanches</span>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Cardápio</a></li>
+        <li><a href="info.html">Sobre</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTATO -->
+<div class="contato-container">
+  <section class="contato" id="contato">
+    <h2>Contato</h2>
+    <p>Telefone: (00) 00000-0000</p>
+    <p>E-mail: contato@fatecburguer.com</p>
+    <p>Endereço: Rua Ariovaldo Silveira Franco, 567 - Mogi Mirim - SP</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.155593750523!2d-46.9494833!3d-22.423168800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8f85a8289dad5%3A0xd045d91b4b6d1257!2sRua%20Ariovaldo%20Silveira%20Franco%2C%20567%20-%20Jardim%2031%20de%20Marco%2C%20Mogi%20Mirim%20-%20SP%2C%2013801-005!5e0!3m2!1sen!2sbr!4v1757948719636!5m2!1sen!2sbr"></iframe>
+  </section>
+
+  <section class="faleconosco" id="faleconosco">
+    <h2>Fale conosco</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Insira seu nome">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" placeholder="nome@email.com" required>
+      <label for="tel">Telefone:</label>
+      <input type="tel" id="tel" placeholder="(00) 00000-0000" required>
+      <label for="assunto">Assunto:</label>
+      <select id="assunto">
+        <option>Escolha uma opção</option>
+        <option>Contato</option>
+        <option>Dúvidas</option>
+        <option>Sugestões</option>
+        <option>Problemas</option>
+      </select>
+      <label for="msg">Mensagem:</label>
+      <textarea id="msg" rows="4" placeholder="Insira sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</div>
+
+</body>
+</html>
