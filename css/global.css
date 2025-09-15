@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/img/fatec-fundo.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('img/fatec-fundo.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
