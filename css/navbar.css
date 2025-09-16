@@ -1,0 +1,35 @@
+/* NAVBAR */
+.navbar {
+  background: rgba(178, 223, 219, 0.90);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+}
+
+.logo {
+  display: flex; 
+  align-items: center;
+}
+
+.logo img { 
+  width: 60px; 
+  margin-right: 10px; 
+}
+
+.logo span { 
+  font-size: 22px; 
+  font-weight: bold; 
+}
+
+.menu { 
+  list-style: none; 
+  display: flex; 
+  gap: 20px; 
+}
+
+.menu a {
+  text-decoration: none; 
+  color: black;
+  font-weight: 500;
+}

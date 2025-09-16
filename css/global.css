@@ -1,0 +1,13 @@
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/fatec-fundo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* RESET */
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Saira', sans-serif;
+}
