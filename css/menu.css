@@ -107,3 +107,30 @@
 .card .overlay button:hover {
   background: #27ae60;
 }
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .cardapio {
+    padding: 20px;
+    gap: 20px;
+  }
+  .card img {
+    height: 120px;
+  }
+  .preco {
+    font-size: 1.4rem;
+    padding: 12px 0;
+  }
+  .card h3 {
+    font-size: 1.1rem;
+    margin: 14px 0 6px 0;
+  }
+  .card p {
+    font-size: 0.9rem;
+    margin: 0 12px 14px 12px;
+  }
+  .card .overlay button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+}

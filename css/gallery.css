@@ -28,3 +28,15 @@
   -webkit-user-drag: none;
   pointer-events: auto;
 }
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .galeria img {
+    width: 90vw;
+    height: 120px;
+  }
+  .galeria {
+    padding: 8px;
+    gap: 6px;
+  }
+}

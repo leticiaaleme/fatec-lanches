@@ -63,3 +63,33 @@
   border-radius: 2px;
   transform: translateX(-50%);
 }
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .bemvindo {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 8px;
+  }
+  .bemvindo .texto {
+    padding-right: 0;
+    text-align: center;
+  }
+  .bemvindo .acoes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  .bemvindo button {
+    padding: 16px 24px;
+    font-size: 0.95rem;
+    margin: 0;
+    width: 160px;
+  }
+  .bemvindo::after {
+    display: none;
+  }
+}

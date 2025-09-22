@@ -1,7 +1,10 @@
 body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/fatec-fundo.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 /* RESET */
@@ -10,4 +13,23 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Saira', sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  body {
+    background-position: center 25%;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    background-position: center 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-position: center 15%;
+  }
 }
