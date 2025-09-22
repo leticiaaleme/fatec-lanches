@@ -61,3 +61,42 @@
 .faleconosco form button:hover {
   background: #26c6da;
 }
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .contato-container {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  .contato-container h2::after {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .contato-container {
+    padding: 20px;
+  }
+  .faleconosco form input,
+  .faleconosco form select,
+  .faleconosco form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-container {
+    margin: 10px;
+    padding: 15px;
+  }
+  .contato-container h2 {
+    font-size: 1.5rem;
+  }
+  .contato-container iframe {
+    height: 200px;
+  }
+  .faleconosco form button {
+    width: 100%;
+  }
+}

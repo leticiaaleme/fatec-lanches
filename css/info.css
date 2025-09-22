@@ -50,3 +50,38 @@
   border-radius: 2px;
   margin: 8px auto 16px auto;
 }
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .sobre {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  .sobre h2::after {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .sobre-conteudo {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .sobre img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre {
+    margin: 10px;
+    padding: 15px;
+  }
+  .sobre h2 {
+    font-size: 1.5rem;
+  }
+  .sobre img {
+    width: 100%;
+  }
+}
